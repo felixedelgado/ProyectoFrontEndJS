@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+.logoImage {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 5rem;
+}
+
+.logoText {
+    display: inline-block;
+    font-family: Nunito;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navText {
+    font-family: Nunito;
+    font-size: 0.8rem;
+}
+
+div ul {
+    position: relative;
+    top: 10%;
+}
+
+nav.bg-color {
+    background-color: rgb(53, 58, 64);
+}
+
+.navMenuP {
+    color: white;
+}
+
+.navMenuS {
+    color: rgb(143, 150, 151);
+}
+
+.navMenuT {
+    color: rgb(76, 138, 95);
+}
+
+article.bg-article {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/ba1.jpg);
+    height: 470px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 72%;
+}
+
+div.cardP {
+    background-color: rgb(0, 0, 0, 0%);
+    color: white;
+    font-family: Nunito;
+    border: 0;
+    width: 33rem;
+    padding-right: 15%;
+    padding-bottom: 15%;
+}
+
+#cardTitle,
+#cardText {
+    font-weight: bold;
+}
+
+button.button {
+    color: white !important;
+}
+
+.titleArticleP {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+.titleArticleS {
+    margin: 0;
+    padding: 0;
+}
+
+.tituloOrador {
+    font-weight: bold;
+}
+
+.titleArticle3 {
+    font-size: 1.2rem;
+}
+
+.textArticle3 {
+    font-size: 0.6rem;
+}
+
+footer {
+    background-color: rgb(29, 64, 83);
+    color: white !important;
+}
+footer div div div {
+    justify-content: center !important;
+}
+
+.botonVerde {
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}

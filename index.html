@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/css/" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="container bg-color p-2">
+            <div class="row">
+                <div class="col-3 float-start">
+                    <img
+                        class="rounded logoImage"
+                        src="./img/codoacodo.png"
+                        alt="Logo"
+                    />
+                    <p class="logoText">Conf Bs As</p>
+                </div>
+                <div class="col-9">
+                    <ul class="nav justify-content-end navText align-middle">
+                        <li class="nav-item">
+                            <a class="nav-link navMenuS" href="#"
+                                >La conferencia</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navMenuS" href="#"
+                                >Los oradores</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navMenuS" href="#"
+                                >El lugar y la fecha</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navMenuP" href="#"
+                                >Conviértete en orador</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navMenuT" href="#"
+                                >Comprar tickets</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="">
+            <article class="container text-center">
+                <div class="row justify-content-center my-3">
+                    <div
+                        class="card border-primary m-1"
+                        style="max-width: 18rem"
+                    >
+                        <div class="card-body">
+                            <h4 class="card-title py-1">Estudiante</h4>
+                            <h5 class="py-1">Tienen un descuento</h5>
+                            <h5 class="py-1">80%</h5>
+                            <p class="card-text py-1">
+                                * presentar documentación
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card border-info m-1" style="max-width: 18rem">
+                        <div class="card-body">
+                            <h4 class="card-title py-1">Trainee</h4>
+                            <h5 class="py-1">Tienen un descuento</h5>
+                            <h5 class="py-1">50%</h5>
+                            <p class="card-text py-1">
+                                * presentar documentación
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-warning m-1"
+                        style="max-width: 18rem"
+                    >
+                        <div class="card-body">
+                            <h4 class="card-title py-1">Junior</h4>
+                            <h5 class="py-1">Tienen un descuento</h5>
+                            <h5 class="py-1">15%</h5>
+                            <p class="card-text py-1">
+                                * presentar documentación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="container">
+                <div class="text-center my-2">
+                    <p class="titleArticleP">VENTA</p>
+                    <h3 class="titleArticleS">VALOR DEL TICKET $200</h3>
+                </div>
+                <form action="" class="mx-5 px-5">
+                    <div class="row text-center">
+                        <div class="col py-2">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Nombre"
+                                aria-label="First name"
+                            />
+                        </div>
+                        <div class="col py-2">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apellido"
+                                aria-label="Last name"
+                            />
+                        </div>
+                    </div>
+                    <div class="mb-3 py-2">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Correo"
+                        />
+                    </div>
+                    <div class="row g-3 py-2">
+                        <div class="col-md-6">
+                            <label
+                                for="inputCity"
+                                class="form-label"
+                                min="1"
+                                pattern="^[0-9]+"
+                                >Cantidad</label
+                            >
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="inputCantidad"
+                                placeholder="Cantidad"
+                            />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label"
+                                >Categoria</label
+                            >
+                            <select id="inputCategoria" class="form-select">
+                                <option selected>Estudiante</option>
+                                <option>Trainee</option>
+                                <option>Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alert alert-primary my-2" role="alert">
+                        Total a Pagar: $ <span id="resultadoTotal"></span>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-6 justify-content-center">
+                            <div class="d-grid gap-2">
+                                <button
+                                    class="btn btn-primary botonVerde"
+                                    type="reset"
+                                >
+                                    Borrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 justify-content-center">
+                            <div class="d-grid gap-2">
+                                <button
+                                    id="botonResumen"
+                                    class="btn btn-primary botonVerde"
+                                    type="button"
+                                >
+                                    Resumen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <footer class="container p-3">
+            <div class="text-center">
+                <div class="row px-5">
+                    <div class="col align-middle">Preguntas frecuentes</div>
+                    <div class="col d-flex p-2 align-middle">Contáctanos</div>
+                    <div class="col d-flex p-2 align-middle">Prensa</div>
+                    <div class="col d-flex p-2 align-middle">Conferencias</div>
+                    <div class="col align-middle">Términos y condiciones</div>
+                    <div class="col d-flex p-2 align-middle">Privacidad</div>
+                    <div class="col d-flex p-2 align-middle">Estudiantes</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
